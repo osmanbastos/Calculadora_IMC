@@ -24,14 +24,17 @@ h1::before {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background: #FF0043;
+    background: #ff0042;
     z-index: -1;
     transition: transform .3s ease;
+    
 }
 h1 {            
     position: relative;
     font-size: 4rem;
     color: #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 html {
     block-size: 99%;
@@ -40,7 +43,7 @@ html {
 body {
     border-style: double;
     border-radius: 100px;
-    border-color: #FF0043;
+    border-color: #FF0042;
     background-color: #000000;
     min-block-size: 100%;
     min-inline-size: 50%;
