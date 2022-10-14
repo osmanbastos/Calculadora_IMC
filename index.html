@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<header>
+    Created by Osman
+</header>
+
+<body>
+    <h1>Calculadora de Índice de Massa Corporal</h1>
+    <fieldset title="insira seus dados">
+        <legend>Seus dados</legend>
+        <form> 
+            <p> Peso: 
+            <input type="number" name="peso" id="peso" placeholder="Insira o peso" required="true"/>
+            </p>
+            
+            <p> Altura:
+            <input type="number" name="altura" id="altura" placeholder="Insira a altura" step="0.01" required="required">
+            </p>
+            <button type="button" onclick="calcular()" class="button">Calcular</button>
+        </form>  
+        <div id="res">
+            Seu resutado aparecerá aqui
+        </div>
+    </fieldset>    
+    
+    <div>
+        <h3>
+        O que é IMC?
+        </h3>
+    </div> 
+    <hr>
+        O IMC (Índice de Massa Corporal) é um cálculo universal adotado pela OMS (Organização Mundial da Saúde) para classificar padrões de saúde relacionados ao peso, como desnutrição e obesidade, principalmente em populações. 
+    <p> 
+        A fórmula do IMC foi criada pelo matemático e astrônomo belga Lambert Adolphe Jacques Quételet em 1832 e recebeu originalmente o nome de "Índice de Quételet", mas foi rebatizada com o nome atual pela OMS em 1972.
+    </p> 
+    <p>
+        No entanto, o IMC não é um índice suficiente para determinar a saúde de uma pessoa, uma vez que não leva em consideração a composição corporal do indivíduo (quantidade de massa muscular e gordura), como aponta Bruno Geloneze, médico endocrinologista e pesquisador principal do centro de pesquisa em obesidade e comorbidades da Unicamp (Universidade Estadual de Campinas).
+    </p>
+    Fonte: <a href="https://www.uol.com.br/vivabem/faq/imc-como-calcular-tabela-dicas-como-melhorar-e-mais.htm?cmpid=copiaecola" target="_blank">Viva Bem Uol</a>
+    
+    <footer>
+        <div>
+            <i>Este site foi criado para teste pessoal em HTML, JavaScript e CSS. Não devendo ser utilizado para outros fins.</i>
+        </div>
+    </footer>
+    <script src = "main.js"></script>
+    
+</body>
+</html>
