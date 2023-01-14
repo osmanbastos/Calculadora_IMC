@@ -5,7 +5,11 @@ function calcular(){
     var peso1 = Number(peso.value)
     var altura1 = Number(altura.value)
     var imc = Number.parseInt(peso1/(altura1*altura1))
-    if (imc < 25){
+    if (imc == 0){
+        res.innerHTML = `Insira todos os dados`
+    }else if (0 < imc & imc < 18.5){
+        res.innerHTML = `O seu IMC é igual <b>${imc}</b>, você está com baixo peso`
+    }else if (18.5 < imc & imc <25){
         res.innerHTML = `O seu IMC é igual <b>${imc}</b>, você está no seu peso normal`
     } else if (25 <= imc & imc <30){
         res.innerHTML = `O seu IMC é igual <b>${imc}</b>, você está com sobrepeso`
