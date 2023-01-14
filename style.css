@@ -1,10 +1,10 @@
 html {
     scroll-behavior: smooth;
-    cursor: pointer;
     block-size: 99%;
     inline-size: 99%;
 }
 header {
+    text-align: center;
     font: Arial 10pt;
     color: #ffffff;
     border-style: double;
@@ -22,10 +22,12 @@ body {
     min-inline-size: 50%;
     margin: 30;
     box-sizing: border-box;
-    display: flexbox;
-    place-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-div {
+div.subtext {
     font: 18pt normal Arial;
     text-align: left;
     color: azure;
@@ -35,22 +37,23 @@ div {
 div#res {
     text-align: center;
 }
-h1 {            
+h2 {            
+    text-align: center;
     position: relative;
     font-size: 4rem;
     color: #ffffff;
     margin-left: 10%;
     margin-right: 10%;
 }
-h1::before {
+h2::before {
             transform: scaleX(0);
             transform-origin: bottom right;
 }
-h1:hover::before {
+h2:hover::before {
     transform: scaleX(1.0);
     transform-origin: bottom left;          
 }
-h1::before {
+h2::before {
     content: " ";
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
@@ -59,13 +62,22 @@ h1::before {
     z-index: -1;
     transition: transform .3s ease;
 }
-fieldset {
-    font: 18pt normal Arial;
-    text-align: left;
-    color: azure;
+.textbox {
     border-radius: 10px;
+    color: azure;
+    font: 18pt normal Arial;
+    width:fit-content;
+}
+.textbox input {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #FF0042;
+}
+.textbox .material-symbols-outlined{
+    position:absolute;
 }
 .button {
+    text-align: center;
     background-color: #ff0042;
     color: #ffffff;
     font-size: 18px;

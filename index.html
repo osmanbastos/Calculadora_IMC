@@ -6,36 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo IMC</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <header>
     Created by Osman
 </header>
 <body>
-    <h1>Calculadora de Índice de Massa Corporal</h1>
-    <fieldset title="insira seus dados">
+    <h2>Calculadora de IMC</h2>
+    <fieldset class="textbox" title="insira seus dados">
         <legend>Seus dados</legend>
         <form> 
-            <p> Peso: 
-            <input type="number" name="peso" id="peso" placeholder="Insira o peso" required="true"/>
-            </p>
-            
-            <p> Altura:
-            <input type="number" name="altura" id="altura" placeholder="Insira a altura" step="0.01" required="required">
-            </p>
-            <button type="button" onclick="calcular()" class="button">Calcular</button>
+            <div class="texbox">
+                <p> Peso: 
+                    <input type="number" name="peso" id="peso" placeholder="Insira o peso" required="true"/>
+                    <span class="material-symbols-outlined">weight</span>                
+                </p>
+                
+                <p> Altura:
+                    <input type="number" name="altura" id="altura" placeholder="Insira a altura" step="0.01" required="required">
+                </p>
+                <button type="button" onclick="calcular()" class="button">Calcular</button>
+            </div>
         </form>  
         <div id="res">
             Seu resutado aparecerá aqui
         </div>
     </fieldset>    
     
-    <div>
+    <div class="subtext">
         <h3>
         O que é IMC?
-        </h3>
-    </div> 
-    <hr>
-    <div>
+        </h3>     
+        <hr>
             O IMC (Índice de Massa Corporal) é um cálculo universal adotado pela OMS (Organização Mundial da Saúde) para classificar padrões de saúde relacionados ao peso, como desnutrição e obesidade, principalmente em populações. 
         <p> 
             A fórmula do IMC foi criada pelo matemático e astrônomo belga Lambert Adolphe Jacques Quételet em 1832 e recebeu originalmente o nome de "Índice de Quételet", mas foi rebatizada com o nome atual pela OMS em 1972.
